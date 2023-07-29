@@ -9,7 +9,7 @@ const AllData = () => {
     const [data, setData] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5080/allData')
+        fetch('https://job-task-server-ten.vercel.app/allData')
             .then(res => res.json())
             .then(data => setData(data))
     }, [data])

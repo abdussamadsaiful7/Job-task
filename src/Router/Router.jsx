@@ -24,7 +24,7 @@ const router = createBrowserRouter([
         {
           path: '/updateData/:id',
           element: <UpdateData/>,
-          loader: ({params}) =>fetch(`http://localhost:5080/allData/${params.id}`)
+          loader: ({params}) =>fetch(`https://job-task-server-ten.vercel.app/allData/${params.id}`)
         },
        
       ]

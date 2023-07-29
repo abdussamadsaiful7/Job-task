@@ -28,7 +28,7 @@ const UpdateData = () => {
 
 
           //send to the server;
-          fetch(`http://localhost:5080/allData/${_id}`, {
+          fetch(`https://job-task-server-ten.vercel.app/allData/${_id}`, {
             method: 'PUT',
             headers: {
                 "content-type": "application/json"

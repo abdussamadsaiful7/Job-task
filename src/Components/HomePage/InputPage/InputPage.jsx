@@ -15,29 +15,12 @@ const InputPage = () => {
         const form = event.target;
         const name = form.name.value;
         const category = form.category.value;
-        // const food = form.food.value;
-        // const Furniture = form.Furniture.value;
-        // const Machinery = form.Machinery.value;
-        // const Maritime = form.Maritime.value;
-        // const MetalWorking = form.MetalWorking.value;
-        // const CNCMachining = form.CNCMachining.value;
-        // const Plastic = form.Plastic.value;
-        // const Printing = form.Printing.value;
-        // const Wood = form.Wood.value;
-        // const Other = form.Other.value;
-        // const Information = form.Information.value;
-        // const Textile = form.Textile.value;
-        // const Service = form.Service.value;
-        // const Tourism = form.Tourism.value;
-        // const Transport = form.Transport.value;
-
-        //const newData = { name, Manufacturing, food, Furniture, Machinery, Maritime, MetalWorking, CNCMachining, Plastic, Printing, Wood, Other, Information, Textile, Service, Tourism, Transport };
 
         const newData = { name, category }
 
         console.log(newData);
 
-        fetch('http://localhost:5080/allData', {
+        fetch('https://job-task-server-ten.vercel.app/allData', {
             method: 'POST',
             headers: {
                 "content-type": "application/json"
